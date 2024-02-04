@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BreakfastCell" rowHeight="211" id="KGk-i7-Jjw" customClass="BreakfastCell" customModule="NestedCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="457" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTw-mh-Daf">
+                        <rect key="frame" x="0.0" y="0.0" width="457" height="211"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zQZ-Vn-ilF">
+                                <rect key="frame" x="0.0" y="0.0" width="457" height="211"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yNJ-ja-bQ7">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zQZ-Vn-ilF" firstAttribute="leading" secondItem="WTw-mh-Daf" secondAttribute="leading" id="BG1-1A-5vR"/>
+                            <constraint firstAttribute="bottom" secondItem="zQZ-Vn-ilF" secondAttribute="bottom" id="Dcn-Nd-S0Q"/>
+                            <constraint firstAttribute="trailing" secondItem="zQZ-Vn-ilF" secondAttribute="trailing" id="IO1-hY-9TG"/>
+                            <constraint firstItem="zQZ-Vn-ilF" firstAttribute="top" secondItem="WTw-mh-Daf" secondAttribute="top" id="Zzf-cs-w56"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="WTw-mh-Daf" secondAttribute="bottom" id="EiQ-0K-HGi"/>
+                    <constraint firstItem="WTw-mh-Daf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LD4-JA-jVu"/>
+                    <constraint firstAttribute="trailing" secondItem="WTw-mh-Daf" secondAttribute="trailing" id="Tty-KM-h5d"/>
+                    <constraint firstItem="WTw-mh-Daf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eO8-Lv-ZRb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="zQZ-Vn-ilF" id="RdT-aj-aoO"/>
+            </connections>
+            <point key="canvasLocation" x="234.35114503816794" y="78.521126760563391"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
